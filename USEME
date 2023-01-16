@@ -1,0 +1,41 @@
+The commands that can be supported by this program are:
+
+To load an image : 'load image-path image-name' (Make sure you're using correct image extension)
+To flip an image horizontally or vertically : 'horizontal-flip image-name dest-image-name'
+or 'vertical-flip image-name dest-image-name'
+To brighten an image : 'brighten image-name dest-image-name'
+To grey-scale an image based on a channel: 'channel-component image-name dest-image-name'
+(red, green, blue, value (maximum RGB channel), intensity (average RGB channel)
+and luma (weighted sum of RGB channel) are offered as channels)
+Example : 'red-component image-name dest-image-name'
+To blur: 'blur image-name dest-image-name'
+To sharpen: 'sharpen image-name dest-image-name'
+To grayscale through color transformation: 'greyscale image-name dest-image-name'
+To sepia: 'sepia image-name dest-image-name'
+To save an image : 'save image-path image-name'
+To quit the program : 'quit' or 'q'
+
+Partial image manipulation commands:
+To brighten an image : 'brighten image-name mask-name dest-image-name'
+To grey-scale an image based on a channel: 'channel-component image-name mask-name dest-image-name'
+(red, green, blue, value (maximum RGB channel), intensity (average RGB channel)
+and luma (weighted sum of RGB channel) are offered as channels)
+Example : 'red-component image-name mask-name dest-image-name'
+To blur: 'blur image-name mask-name dest-image-name'
+To sharpen: 'sharpen image-name mask-name dest-image-name'
+To grayscale through color transformation: 'greyscale image-name mask-name dest-image-name'
+To sepia: 'sepia image-name mask-name dest-image-name'
+
+GUI (To use our GUI and begin image processing) :
+Load : an image is loaded by pressing 'Open a file' and choosing a file path.
+Operation : After valid file path (extension is one of: ppm, jpg, png, bmp) is loaded,
+image can be manipulated using command buttons to the left and filter will be applied to the
+displayed image automatically.
+Note : Brighten takes in an increment so user can type or scroll increment below the command.
+If no increment given, error message will pop up on screen.
+Save : The image displayed can also be saved by clicking 'Save a file' and typing in a image name
+with a valid extension in the top bar. Users can also select where to export the image.
+Errors : Errors will be displayed through pop ups on the GUI.
+
+Note: each command has to be typed exactly in the order specified here, ie the command is first
+and then each parameter in that order
